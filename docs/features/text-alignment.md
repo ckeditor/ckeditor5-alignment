@@ -50,6 +50,11 @@ ClassicEditor
 
 {@snippet features/custom-text-alignment-toolbar}
 
+## Integration
+
+The text alignment plugin is integrated with the {@link features/remove-format Remove Format} plugin by default. There is no need to provide any additional configuration to those plugins in order to use the remove format functionality over elements with applied any text alignment.
+
+
 ## Installation
 
 To add this feature to your editor, install the [`@ckeditor/ckeditor5-alignment`](https://www.npmjs.com/package/@ckeditor/ckeditor5-alignment) package:
