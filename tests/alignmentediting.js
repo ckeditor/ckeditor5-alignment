@@ -40,8 +40,14 @@ describe( 'AlignmentEditing', () => {
 	} );
 
 	it( 'its attribute is marked with a formatting property', () => {
-		expect( model.schema.getAttributeProperties( 'alignment' ) ).to.deep.equal( {
+		expect( model.schema.getAttributeProperties( 'alignment' ) ).to.include( {
 			isFormatting: true
+		} );
+	} );
+
+	it( 'its attribute is marked with a copOnEnter property', () => {
+		expect( model.schema.getAttributeProperties( 'alignment' ) ).to.include( {
+			copyOnEnter: true
 		} );
 	} );
 
